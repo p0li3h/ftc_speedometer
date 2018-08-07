@@ -8,3 +8,7 @@ client_scripts {
 	"configurations.lua",
 	"cl_carHud.lua",
 }
+
+exports {
+	"ChangeState",
+}
