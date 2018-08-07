@@ -5,7 +5,16 @@ Simple speedometer!
 This is using a lot of part from the old ft_speedometer, so everything isn't coded by me.
 
 ## Requirments
-	- ft_libs
+	- ft_libs : https://github.com/FivemTools/ft_libs
+	
+## Configuration
+	In configurations.lua :
+	Config = {
+ 		kmhMode = true, (false to mph mode)
+		Rect_alpha = 100, ( 0 - 255)
+  		Speed_alpha = 150, ( 0 - 255)
+  		Advanced_for_plane = true, ( false to keep the same speedometer in flying vehicle )
+	}
 	
 ## Picture
 	
