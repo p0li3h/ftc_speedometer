@@ -56,9 +56,33 @@ end)
 
 RegisterNetEvent("ftc_speedometer:State")
 AddEventHandler('ftc_speedometer:State', function(state)
-	if state == true then
-		display = false
+	if state ~= nil then
+		if state == false then
+			display = false
+		else
+			display = true
+		end
 	else
-		display = true
+		if display == true then
+			display = false
+		else
+			display = true
+		end
 	end
 end)
+
+function ChangeState(state)
+	if state ~= nil then
+		if state == false then
+			display = false
+		else
+			display = true
+		end
+	else
+		if display == true then
+			display = false
+		else
+			display = true
+		end
+	end
+end
