@@ -54,8 +54,8 @@ Citizen.CreateThread(function()
 	end
 end)
 
-RegisterNetEvent("MovieMode:State")
-AddEventHandler('MovieMode:State', function(state)
+RegisterNetEvent("ftc_speedometer:State")
+AddEventHandler('ftc_speedometer:State', function(state)
 	if state == true then
 		display = false
 	else
