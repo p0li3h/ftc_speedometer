@@ -7,7 +7,7 @@ Citizen.CreateThread(function()
 	local text = "KM/H"
 	local speedMultiplicator = 3.6
 
-	if not Config.kmhMode then
+	if Config.kmhMode == false then
 		speedMultiplicator = 2.236936
 		text = "MPH"
 	end
