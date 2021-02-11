@@ -42,7 +42,7 @@ Citizen.CreateThread(function()
 						exports.ft_libs:Text({ text = "M", font = 4, x = 0.073, y = 0.78, scale = 0.4, alpha = Config.SpeedAlpha})
 
 					else
-						local carSpeed = GetEntitySpeed(vehicle) * speedMultiplicator -- convert in km/h or mph
+						local carSpeed = GetEntitySpeed(vehicle) * speedMultiplicator -- rpm but need to change coord, im too lazy
 						DrawRect(0.133, 0.947, 0.046, 0.03, 0, 0, 0, Config.RectAlpha)
 						exports.ft_libs:Text({ text = "" .. math.floor(carSpeed), font = 4, x = 0.11, y = 0.925, scale = 0.64, alpha = Config.SpeedAlpha})
 						exports.ft_libs:Text({ text = text, font = 4, x = 0.133, y = 0.937, scale = 0.4, alpha = Config.SpeedAlpha})
